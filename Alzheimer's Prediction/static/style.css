@@ -1,0 +1,125 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #3b82f6, #9333ea);
+    color: white;
+}
+
+/* Scrollable Container */
+.scrollable-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Risk Level Section */
+.risk-level-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.risk-level-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.risk-level-section .risk-level {
+    font-size: 2rem;
+    color: #10b981; /* Green for a positive appearance */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.risk-level-section .risk-advice {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Content Layout for Details and Diagram */
+.content-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap content if space is limited */
+}
+
+/* Left Section: User Details */
+.details {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Section: Diagram */
+.diagram-section {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.diagram-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Explanation Section */
+.explanation {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.explanation h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.explanation p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
