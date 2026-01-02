@@ -1,0 +1,43 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data
+metrics = ['Accuracy', 'Precision', 'Recall', 'F1-Score', 'ROC AUC']
+without_smote = [0.94, 0.9266, 0.91, 0.92, 0.95]  # Metrics without SMOTE
+with_smote = [0.92, 0.869, 0.92, 0.894, 0.937]    # Metrics with SMOTE
+
+# Set up the plot
+x = np.arange(len(metrics))  # X-axis positions
+width = 0.35  # Width of the bars
+
+fig, ax = plt.subplots(figsize=(10, 6))
+
+# Plot bars for "Without SMOTE" and "With SMOTE"
+rects1 = ax.bar(x - width/2, without_smote, width, label='Without SMOTE', color='skyblue')
+rects2 = ax.bar(x + width/2, with_smote, width, label='With SMOTE', color='lightgreen')
+
+# Add labels, title, and custom x-axis tick labels
+ax.set_xlabel('Metrics', fontsize=12)
+ax.set_ylabel('Scores', fontsize=12)
+ax.set_title('Model Performance Comparison: With vs Without SMOTE', fontsize=14, pad=20)
+ax.set_xticks(x)
+ax.set_xticklabels(metrics, fontsize=12)
+ax.legend(fontsize=12)
+
+# Add value labels on top of the bars
+def add_labels(rects):
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate(f'{height:.3f}',
+                    xy=(rect.get_x() + rect.get_width() / 2, height),
+                    xytext=(0, 3),  # 3 points vertical offset
+                    textcoords="offset points",
+                    ha='center', va='bottom', fontsize=10)
+
+add_labels(rects1)
+add_labels(rects2)
+
+# Adjust layout and display
+plt.ylim(0.8, 1.0)  # Set y-axis limits
+plt.tight_layout()
+plt.show()

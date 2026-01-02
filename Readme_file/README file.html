@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="alzheimers-disease-prediction">Alzheimer’s Disease Prediction</h1>
+<h2 id="project-overview">Project Overview</h2>
+<p>A machine learning-based platform for early detection of Alzheimer’s disease. It classifies users into risk levels (Low, Moderate, High, or Normal) based on their cognitive, functional, and lifestyle data, offering actionable recommendations to support early interventions.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Risk Prediction</strong>: Categorizes individuals into varying Alzheimer’s risk levels.</li>
+<li><strong>Personalized Recommendations</strong>: Tailored advice for each risk category.</li>
+<li><strong>User-Friendly Interface</strong>: Simple and intuitive web-based interaction.</li>
+<li><strong>Model Transparency</strong>: SHAP and LIME values explain feature contributions to predictions.</li>
+</ul>
+<h2 id="how-it-works">How It Works</h2>
+<ol>
+<li>
+<p>User fills in health and lifestyle questionnaire via a web interface.</p>
+</li>
+<li>
+<p>System predicts Alzheimer’s risk using the XGBoost model and KMeans model.</p>
+</li>
+<li>
+<p>Displays risk level with recommendations for preventive or follow-up actions.</p>
+</li>
+</ol>
+<h2 id="installation--usage">Installation &amp; Usage</h2>
+<strong>Website</strong>
+<ol>
+<li>Start the application:</li>
+</ol>
+<blockquote>
+<p>Use any python IDE to run the coding</p>
+</blockquote>
+<pre><code>python app.py
+</code></pre>
+<ol start="2">
+<li>Open <a href="http://127.0.0.1:5000">this website</a> in your browser.</li>
+</ol>
+<strong>MLflow</strong>
+<ol>
+<li>Use any Jupyter Notebook / VS Code to run the Show_mlflow.ipynb coding to open mlflow ui.</li>
+</ol>
+<blockquote>
+<p>Open terminal or command prompt(Admin) to run the coding. Make sure the path is correct before run.</p>
+</blockquote>
+<pre><code>mlflow ui</code></pre>
+<ol start="2">
+<li>Open <a href="http://127.0.0.1:5000">this website</a> in your browser.</li>
+</ol>
+
+
+
+
+<h2 id="technologies">Technologies</h2>
+<ul>
+<li><strong>Dataset</strong>: Kaggle (health, cognitive, and lifestyle data)</li>
+<li><strong>Machine Learning</strong>: XGBoost classification, KMeans clustering</li>
+<li><strong>Model Trace</strong>: MLflow Tracking</li>
+<li><strong>Framework</strong>: Flask (web interface)</li>
+</ul>
+<h2 id="authors">Authors</h2>
+<ul>
+<li>Ng Jun Cherng (Product Manager) - Oversees project execution, ensures alignment with objectives, and supervise the project to meet the dateline.</li>
+<li>Chan Mei Yie (Machine Learning Engineer) - Developed the machine learning pipeline, models and assists in integrating the model into the system.</li>
+<li>Dee Ying A/P Kok Hoe (Machine Learning Reseacher) - Conducted research on suitable algorithms and evaluated model performance.</li>
+<li>Low Jack Han (DevOps Engineer) - Developed the website, integrated the machine learning model, and delivered the final product.</li>
+<li>Looi Yong Hang (MLOps Engineer) - Managed model versioning and tracked changes across versions for performance comparison.</li>
+<li>Tan Wui Han (Data Engineer) - Preprocessed and managed datasets, ensuring clean and structured data.</li>
+<li>Wong Wai Kuan (Data Scientist) - Analyzed data insights, conducted feature engineering, and contributed to model selection.</li>
+<li>Choo Yun Huoy (Lecturer) - Project advisor and guide.</li>
+</ul>
+<h2 id="reporttaskdistribution">Report Task Distribution</h2>
+<ul>
+<li>Executive Summary (Low Jack Han)</li>
+<li>Project Background (Wong Wai Kuan)</li>
+<li>Objective (Ng Jun Cherng)</li>
+<li>Project Scope & Significant (Tan Wui Han)</li>
+<li>Proposed Solution (Dee Ying A/P Kok Hoe)</li>
+<li>Machine Learning Experimentation (Chan Mei Yie)</li>
+<li>Results Discussion (Chan Mei Yie)</li>
+<li>Conclusion (Looi Yong Hang)</li>
+</ul>
+<h2 id="license">License</h2>
+<p>MIT License</p>
+<blockquote>
+<p>To understand more details on codings and results part please refer to our final file (Alzheimer_v_6_Final.ipynb)</p>
+</blockquote>
+<pre><code></code></pre>
+</div>
+</body>
+
+</html>
