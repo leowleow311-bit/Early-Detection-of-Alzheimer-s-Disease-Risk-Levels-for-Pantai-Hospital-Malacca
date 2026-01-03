@@ -64,5 +64,3 @@ MIT License
 
 
 > To understand more details on codings and results part please refer to our final file (Alzheimer_v_6_Final.ipynb)
-
-```
