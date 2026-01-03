@@ -50,25 +50,12 @@ A machine learning-based platform for early detection of Alzheimer's disease. It
 
 ## Authors
 
- - Ng Jun Cherng (Product Manager) - Oversees project execution, ensures alignment with objectives, and supervise the project to meet the dateline.
- - Chan Mei Yie (Machine Learning Engineer) - Developed the machine learning pipeline, models and assists in integrating the model into the system. 
+ - Chan Mei Yie (Product Manager) - Oversees project execution, ensures alignment with objectives, and supervise the project to meet the dateline.
+ - Chan Xin Yee (Machine Learning Engineer) - Developed the machine learning pipeline, models and assists in integrating the model into the system. 
  - Dee Ying A/P Kok Hoe (Machine Learning Reseacher) - Conducted research on suitable algorithms and evaluated model performance.
- - Low Jack Han (DevOps Engineer) - Developed the website, integrated the machine learning model, and delivered the final product.
- - Looi Yong Hang (MLOps Engineer) - Managed model versioning and tracked changes across versions for performance comparison.
- - Tan Wui Han (Data Engineer) - Preprocessed and managed datasets, ensuring clean and structured data.
- - Wong Wai Kuan (Data Scientist) - Analyzed data insights, conducted feature engineering, and contributed to model selection.
- - Choo Yun Huoy (Lecturer) - Project advisor and guide.
-
-
-## Report Task Distribution 
-- Executive Summary (Low Jack Han)
-- Project Background (Wong Wai Kuan)
-- Objective (Ng Jun Cherng)
-- Project Scope & Significant (Tan Wui Han)
-- Proposed Solution (Dee Ying A/P Kok Hoe)
-- Machine Learning Experimentation (Chan Mei Yie)
-- Results Discussion (Chan Mei Yie)
-- Conclusion (Looi Yong Hang)
+ - Lim Jia Yee (DevOps Engineer) - Developed the website, integrated the machine learning model, and delivered the final product.
+ - Leow Kah Yee (Data Engineer) - Preprocessed and managed datasets, ensuring clean and structured data.
+ - Prof Ts Dr Burhanuddin (Lecturer) - Project management advisor.
 
 
 ## License
