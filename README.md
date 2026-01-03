@@ -1,6 +1,4 @@
 # Early Detection of Alzheimers Disease Risk Levels for Pantai Hospital Malacca
-# Alzheimer's Disease Prediction
-
 
 ## Project Overview
 
