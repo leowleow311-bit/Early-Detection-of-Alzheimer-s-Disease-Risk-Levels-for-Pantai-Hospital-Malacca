@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #3b82f6, #9333ea);
+            color: white;
+        }
+
+        /* Scrollable Container */
+        .scrollable-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Heading Styles */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Risk Level Section */
+        .risk-level-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .risk-level-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .risk-level-section .risk-level {
+            font-size: 2rem;
+            color: #10b981; /* Green for a positive appearance */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .risk-level-section .risk-advice {
+            font-size: 1rem;
+            color: #e0e0e0;
+        }
+
+        /* Content Layout for Details, Diagram, and Suggestions */
+        .content-layout {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* User Details Section */
+        .details {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Diagram Section */
+        .diagram-section {
+            flex: 2;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .diagram-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        /* Suggestions Section */
+        .suggestions {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .suggestions h2 {
+            margin-bottom: 15px;
+        }
+
+        .suggestions ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .suggestions li {
+            margin-bottom: 10px;
+        }
+
+        .suggestions a {
+            text-decoration: none;
+            color: #10b981; /* Green link color */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .suggestions a:hover {
+            color: #007bff; /* Blue hover effect */
+        }
+
+        /* Explanation Section */
+        .explanation {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .explanation h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .explanation p {
+            color: white;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: fit-content;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-container">
+        <h1>Prediction Result</h1>
+
+        <!-- Centered Risk Level Section -->
+        <div class="risk-level-section">
+            <h2>Risk Level</h2>
+            <h3 class="risk-level">{{ category }}</h3>
+            <p class="risk-advice">{{ advice }}</p>
+        </div>
+
+        <div class="content-layout">
+            <!-- Left Section: User Details -->
+            <div class="details">
+                <h2>User Details:</h2>
+                <p><strong>Name:</strong> {{ name }}</p>
+                <p><strong>Age:</strong> {{ age }}</p>
+                <p><strong>Gender:</strong> {{ gender }}</p>
+            </div>
+
+            <!-- Center Section: Prediction Explanation -->
+            <div class="diagram-section">
+                <h2>Prediction Explanation</h2>
+                <p>The following visualizations show how each feature contributed to your prediction:</p>
+                <img src="{{ shap_summary_image }}" alt="SHAP Summary Plot">
+                <iframe src="{{ shap_force_html }}" width="100%" height="400px" style="border:none;"></iframe>
+            </div>
+
+            <!-- Right Section: Suggestions -->
+            <div class="details">
+                <h2>Suggestions</h2>
+                <ul>
+                    <li><a href="https://www.nia.nih.gov/health/alzheimers-and-dementia/preventing-alzheimers-disease-what-do-we-know" target="_blank">Clues to Prevent Alzheimer's Disease</a></li>
+                    <li><a href="https://www.webmd.com/fitness-exercise/ss/twelve-habits-super-healthy-people" target="_blank">A Good Lifestyle Habits</a></li>
+                    <li><a href="https://www.healthline.com/health/mental-health/brain-exercises#do-tai-chi" target="_blank">Brain Exercises</a></li>
+                    <li><a href="https://www.hopkinsmedicine.org/psychiatry/specialty-areas/memory-center" target="_blank">Memory and Alzheimer’s Treatment Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
