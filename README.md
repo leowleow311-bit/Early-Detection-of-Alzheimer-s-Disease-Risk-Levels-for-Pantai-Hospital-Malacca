@@ -19,6 +19,9 @@ A machine learning-based platform for early detection of Alzheimer's disease. It
 
 3. Displays risk level with recommendations for preventive or follow-up actions.
 
+## Project Demonstration
+https://github.com/leowleow311-bit/Early-Detection-of-Alzheimer-s-Disease-Risk-Levels-for-Pantai-Hospital-Malacca/issues/1#issue-3817258197
+
 ## Installation & Usage
 **Website**
  1. Start the application:
