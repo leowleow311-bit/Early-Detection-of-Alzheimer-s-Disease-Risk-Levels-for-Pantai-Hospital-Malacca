@@ -65,14 +65,14 @@ https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
  - Prof Ts Dr Burhanuddin (Lecturer) - Project management advisor.
 
 ## Results & Analysis
-#Supervise Analysis 
+**Supervise Analysis**
 <img width="649" height="547" alt="image" src="https://github.com/user-attachments/assets/89b2196f-c658-4381-98f7-3d400c1e6653" />
 
 Evaluation Metrics Comparison
 <img width="1200" height="600" alt="Evaluation_Metric" src="https://github.com/user-attachments/assets/f1a019c4-e75b-4828-840b-6d1005f022a7" />
 
 
-#Unsupervise Analysis on Top 3 Features
+**Unsupervise Analysis on Top 3 Features**
 <img width="808" height="770" alt="image" src="https://github.com/user-attachments/assets/90d6995b-e313-444d-b5e3-7b1e5eceb8b3" />
 
 Silhuotte Scores Comparison
