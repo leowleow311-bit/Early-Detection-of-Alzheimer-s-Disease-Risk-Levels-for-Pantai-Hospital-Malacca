@@ -55,7 +55,7 @@ https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
 
  - Chan Mei Yie (Product Manager) - Oversees project execution, ensures alignment with objectives, and supervise the project to meet the dateline.
  - Chan Xin Yee (Machine Learning Engineer) - Developed the machine learning pipeline, models and assists in integrating the model into the system. 
- - Dee Ying A/P Kok Hoe (Machine Learning Reseacher) - Conducted research on suitable algorithms and evaluated model performance.
+ - Dee Ying A/P Kok Hoe (Machine Learning Researcher) - Conducted research on suitable algorithms and evaluated model performance.
  - Lim Jia Yee (DevOps Engineer) - Developed the website, integrated the machine learning model, and delivered the final product.
  - Leow Kah Yee (Data Engineer) - Preprocessed and managed datasets, ensuring clean and structured data.
  - Prof Ts Dr Burhanuddin (Lecturer) - Project management advisor.
