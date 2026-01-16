@@ -20,7 +20,12 @@ A machine learning-based platform for early detection of Alzheimer's disease. It
 3. Displays risk level with recommendations for preventive or follow-up actions.
 
 ## Project Demonstration
+Website Link:
+https://alzheimer-s-prediction-1.fly.dev/index
+
+Video Link:
 https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
+
 
 ## Installation & Usage
 **Website**
@@ -30,7 +35,7 @@ https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
 
     python app.py
 
- 2. Open [this website](http://127.0.0.1:5000) in your browser.
+ 2. Open http://127.0.0.1:8080 in your browser.
 
 **Website**
 1. Use any Jupyter Notebook / VS Code to run the Show_mlflow.ipynb coding to open mlflow ui.
@@ -39,7 +44,7 @@ https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
 
     mlflow ui
 
- 2. Open [this website](http://127.0.0.1:5000) in your browser.
+ 2. Open http://127.0.0.1:8080 in your browser.
 
 
 
