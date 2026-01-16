@@ -21,9 +21,9 @@ A machine learning-based platform for early detection of Alzheimer's disease. It
 
 ## Project Demonstration
 Website Link:
-https://alzheimer-s-prediction-1.fly.dev/index
+[https://alzheimer-s-prediction-1.fly.dev/](https://alzheimer-s-prediction-1.fly.dev/)
 
-Video Link:https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
+https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
 
 
 ## Installation & Usage
