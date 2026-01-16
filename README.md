@@ -65,6 +65,10 @@ https://github.com/user-attachments/assets/57ea8f98-d458-44eb-87ac-32441727ef20
  - Prof Ts Dr Burhanuddin (Lecturer) - Project management advisor.
 
 ## Results & Analysis
+**Data Cleaning**
+Handle imbalanced data
+<img width="1000" height="600" alt="SMOTE_metric_Comparison" src="https://github.com/user-attachments/assets/363a434a-81d8-48af-b736-c63c227ec449" />
+
 
 **Supervise Analysis**
 
